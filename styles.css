@@ -1,0 +1,367 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background: #333;
+    padding: 20px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #444;
+    border-radius: 4px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background: #28a745;
+    color: #fff;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background: url("https://api.freelogodesign.org/assets/blog/thumb/a7435e94876f46be9635c28abdb89124_420x300.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero .hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons a {
+    margin-right: 10px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* About Section */
+
+.about {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-image,
+.about-info {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.contact-details {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.contact-details li {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.social-links li {
+    display: [inside-flex] !important;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
+
+.about-buttons a {
+    margin-right: 10px;
+}
+
+
+/* Services Section */
+
+.services {
+    padding: 40px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.services-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.services-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-item i {
+    font-size: 30px;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Skills Section */
+
+.skills {
+    padding: 40px 0;
+    background: #f9f9f9;
+}
+
+.skills-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-image,
+.skills-info {
+    flex: 1;
+}
+
+.skills-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.skills-info h4 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.skills-info h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skills-info p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #4caf50;
+    height: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
