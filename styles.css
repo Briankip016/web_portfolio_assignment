@@ -68,6 +68,17 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+.service-link {
+    text-decoration: none;
+    color: inherit; /* Inherit the color of the parent element */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.service-link:hover {
+    color: #007bff; /* Change this to your desired hover color */
+}
+
 #services .col-md-4 {
     padding: 1.5rem;
     border: 1px solid #ddd;
